@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+	Golds Bakery Website
+	Menu Stylesheet
+	Hannah Lichtman
+	1/1/2025
+
+*/
+
+div.item {
+	color: rgba(137, 71, 52, 0.8);
+	font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.2em;
+	text-align: justify;
+	padding: 1em;
+}
+
+dl {
+	margin: 100px 100px 20px;
+}
+
+dl > dt {
+	float: right;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 10px 10px;
+	padding: 5px 0;
+	display: inline-block;
+}
+
+dd > input {
+	width: 30px;
+}
+
+dd, dt {
+    line-height: 18px;
+}
+
+h2 {
+	font-size: 18px;
+	margin: 20px auto;
+}
+
+h2 > #total {
+	width: 80px;
+	height: 40px;
+	border: 1.5px solid black;
+	text-align: left;
+	padding: .4em;
+	font-size: 18px;
+}
