@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+	Golds Bakery Website
+	Menu Page
+	Hannah Lichtman
+	1/1/2025
+	--!>
+
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link href="css/tp_style1.css" rel="stylesheet" >
+    <link href="css/tp_menu_list.css" rel="stylesheet" >
+    <script src="js/tp_cart.js" defer></script>
+
+</head>
+<body>
+    <header>
+		<nav class="banner">
+			<ul>
+				<li><a href="tp_main.html">Home</a></li>
+				<li><a href="tp_orders.html">Specialty Cakes</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div class="nameButton">
+    <button id="button">Background</button>
+     </div>
+    <article>
+        <dl>
+            <div class="item"><dt>
+                Bagels</dt><dd>$2</dd>
+                <dd><input type="number" id="bagels" min="0"></dd>
+            </div>
+            <div class="item"><dt>
+                Rye Bread</dt><dd>$5</dd>
+                <dd><input type="number" id="bread" min="0"></dd>
+                </div>
+            <div class="item"><dt>
+                 Pumkin / Banana Bread</dt><dd>$7</dd>
+                <dd><input type="number" id="specBread" min="0"></dd>
+            </div>
+            <div class="item"><dt>
+                Challah</dt><dd>$4.00</dd>
+                <dd><input type="number" id="challah" min="0"></dd>
+            </div>
+            <div class="item"><dt>
+                Cupcakes</dt><dd>$2.50</dd>
+                <dd><input type="number" id="cupcake" min="0"></dd>
+            </div>
+            <div class="item"><dt>Cakes</dt><dd>$22</dd>
+                <dd><input type="number" id="cake" min="0"></dd>
+                </div>
+        </dl>
+        <h2> Total:    <span id="total">0.00</span></h2>
+    </article>
+    <footer>
+		<address>
+			188-347-9801   |   123 Beld Drive, Brooklyn, NY 11901   |   goldsbakery@gmail.com
+		</address>
+        <p id="date"></p>
+	</footer>
+</body>
+</html>

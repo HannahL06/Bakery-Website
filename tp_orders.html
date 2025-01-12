@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+	Golds Bakery Website
+	Special Orders Page
+	Hannah Lichtman
+	1/1/2025
+    --!>
+
+    <meta charset="UTF-8">
+    <title>Specialty Cakes</title>
+    <link href="css/tp_style1.css" rel="stylesheet">
+    <script src="js/tp_cart.js" defer></script>
+    <script src="js/tp_order_form.js" defer></script>
+</head>
+<body>
+    <header>
+		<nav class="banner">
+			<ul>
+				<li><a href="tp_main.html">Home</a></li>
+                <li><a href="tp_menu.html">Menu</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <div class="nameButton">
+    <button id="button">Background</button>
+    </div>
+
+    <article>
+    <p> Make your event extra special with a custom cake made just for you.
+        Whether it's for a wedding, birthday, or milestone, our cakes
+        are designed to look beautiful and taste delicious. We offer a variety
+        of flavors and can create designs that fit your theme or dietary accommodations. Let us
+        help you celebrate with a cake that will make
+        your event unforgettable. Get in touch today to start planning your perfect cake!
+    </p>
+     <img src="images/cakes.png" alt="cakes picture" class="pic">
+    </article>
+    <form id="cakeOrder">
+        <p>Specialty Cakes Order Form</p>
+        <label>Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label>Occasion:</label>
+        <input type="text" id="occasion"><br><br>
+
+        <label>Flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="coffee">Coffee</option>
+            <option value="lemon">Lemon</option>
+        </select><br><br>
+
+        <label>Shape:</label>
+        <select id="shape" name="shape">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+            <option value="diamond">Diamond</option>
+        </select><br><br>
+
+        <label>Personal Text on Cake:</label>
+        <textarea id="message" name="message">
+        </textarea><br><br>
+
+        <button type="button" id="subButton">Submit</button></form>
+    <span id="display"></span>
+
+    </form>
+    <footer>
+		<address>
+			188-347-9801   |   123 Beld Drive, Brooklyn, NY 11901   |   goldsbakery@gmail.com
+		</address>
+        <p id="date"></p>
+	</footer>
+</body>
+</html>
