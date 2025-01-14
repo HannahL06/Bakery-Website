@@ -40,7 +40,7 @@ function getTotal() {
 const button = document.getElementById("button");
 const overlay = document.createElement("div");
 overlay.classList.add("overlay");
-overlay.innerText = "Author: Hannah Lichtman\n Semester: Fall 2024";
+overlay.innerText = "Author: Hannah Lichtman";
 document.body.appendChild(overlay);
 
 // display the overlay
