@@ -10,7 +10,7 @@
 
 div.item {
 	color: rgba(137, 71, 52, 0.8);
-	font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
+	font-family: 'Arial', 'Trebuchet MS', sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.2em;
 	text-align: justify;
@@ -18,7 +18,7 @@ div.item {
 }
 
 dl {
-	margin: 100px 100px 20px;
+	margin: 100px 100px 10px;
 }
 
 dl > dt {
@@ -27,8 +27,8 @@ dl > dt {
 }
 
 dd {
-	margin: 0 0 10px 10px;
-	padding: 5px 0;
+	margin: 0 0 5px 10px;
+	padding: 3px 0;
 	display: inline-block;
 }
 
@@ -45,11 +45,20 @@ h2 {
 	margin: 20px auto;
 }
 
+div.total {
+	display: flex;
+	justify-content: flex-end;
+	padding: .5em;
+}
+
 h2 > #total {
 	width: 80px;
 	height: 40px;
 	border: 1.5px solid black;
-	text-align: left;
+	text-align: right;
 	padding: .4em;
 	font-size: 18px;
+	position: absolute;
+	right: 0;
+	top: 50%;
 }
