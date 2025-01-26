@@ -41,8 +41,6 @@ function getTotal() {
 document.addEventListener("DOMContentLoaded", function() {
     const currentDate = new Date();
     const lastModified = new Date(document.lastModified);
-    const diffInTime = currentDate - lastModified;
-    const diffInDays = Math.floor(diffInTime / (1000 * 3600 * 24));
     const results = (`Date: ${currentDate.toDateString()}. Last Modified: ${lastModified.toDateString()}.`);
     document.getElementById("date").textContent = results;
 });
