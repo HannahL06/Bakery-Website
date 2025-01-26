@@ -1,6 +1,6 @@
 /*	
 	Golds Bakery Website
-	Shopping Cart, Name Overlay, and Dates
+	Shopping Cart and Date Scripts
 	Hannah Lichtman
 	1/1/2025
 */
@@ -34,28 +34,8 @@ function getTotal() {
     document.getElementById("total").textContent = "$" + total.toFixed(2);
 }
 
-// 2. Create Overlay Name Node
 
-// create name button
-const button = document.getElementById("button");
-const overlay = document.createElement("div");
-overlay.classList.add("overlay");
-overlay.innerText = "Author: Hannah Lichtman";
-document.body.appendChild(overlay);
-
-// display the overlay
-button.addEventListener("click", function() {
-    overlay.style.display = "flex";
-    button.style.display = "none";
-});
-
-// close the overlay
-overlay.addEventListener("click", function() {
-    overlay.style.display = "none";
-    button.style.display = "inline-block";
-});
-
-// 3. Display Date, Last Modified Date, and the Difference
+// 2. Display Date and Last Modified Date
 
 // display date and amount of time since last modified
 document.addEventListener("DOMContentLoaded", function() {
@@ -63,6 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastModified = new Date(document.lastModified);
     const diffInTime = currentDate - lastModified;
     const diffInDays = Math.floor(diffInTime / (1000 * 3600 * 24));
-    const results = (`Date: ${currentDate.toDateString()}. Last Modified: ${lastModified.toDateString()} , ${diffInDays} days ago.`);
+    const results = (`Date: ${currentDate.toDateString()}. Last Modified: ${lastModified.toDateString()}.`);
     document.getElementById("date").textContent = results;
 });
