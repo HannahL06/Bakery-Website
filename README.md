@@ -1,2 +1,2 @@
 # Bakery-Website
-A model bakery website. 
+A model bakery website. It has 3 web pages: a home page, menu page, and an online order page. There are 2 CSS files - 1 for all pages, and a second file for the layout of the menu. There are 3 JavaScript scripts. The current date and the last modified date are displayed on the bottom of each page. There is an order form to order a specialty cake which has text and drop-down input feilds.
